@@ -61,7 +61,7 @@ setup(
     },
     extras_require={
         "dev": [
-            "black",
+            'black;python_version>="3.6"',
             "flake8==3.5.0",
             "mkdocs",
             "mkdocs-material",
