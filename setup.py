@@ -1,9 +1,8 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 
 import io
 import os
-from setuptools import find_packages, setup
+from setuptools import find_packages, setup  # type: ignore
 
 CURDIR = os.path.abspath(os.path.dirname(__file__))
 
@@ -59,16 +58,6 @@ setup(
             "gdbgui = gdbgui.backend:main"
         ]
     },
-    extras_require={
-        "dev": [
-            'black;python_version>="3.6"',
-            "flake8==3.5.0",
-            "mkdocs",
-            "mkdocs-material",
-            "collective.checkdocs==0.2",
-            "PyInstaller==3.3.1",
-        ]
-    },
     zip_safe=False,
     install_requires=REQUIRED,
     classifiers=[
@@ -76,12 +65,15 @@ setup(
         "Operating System :: OS Independent",
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 2",
-        "Programming Language :: Python :: 2.7",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.4",
-        "Programming Language :: Python :: 3.5",
         "Programming Language :: Python :: 3.6",
-        "Programming Language :: Python :: Implementation :: PyPy",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
     ],
+    python_requires=">=3.6",
+    project_urls={
+        "Documentation": "https://cs01.github.io/gdbgui/",
+        "Source Code": "https://github.com/cs01/gdbgui",
+        "Bug Tracker": "https://github.com/cs01/gdbgui/issues",
+    },
 )

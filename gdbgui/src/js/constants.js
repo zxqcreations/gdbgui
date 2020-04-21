@@ -21,8 +21,7 @@ let constants = {
     BACKTRACE_LINK: "BACKTRACE_LINK",
     GDBGUI_OUTPUT: "GDBGUI_OUTPUT",
     GDBGUI_OUTPUT_RAW: "GDBGUI_OUTPUT_RAW",
-    AUTOCOMPLETE_OPTION: "AUTOCOMPLETE_OPTION",
-    UPGRADE_GDBGUI: "UPGRADE_GDBGUI"
+    AUTOCOMPLETE_OPTION: "AUTOCOMPLETE_OPTION"
   },
 
   source_code_selection_states: {
@@ -51,8 +50,6 @@ let constants = {
   tree_component_id: "tree",
 
   default_max_lines_of_code_to_fetch: 500,
-  gdbgui_upgrade_url: "https://grassfedcode.onfastspring.com/gdbgui-premium",
-  gdbgui_donate_url: "https://www.paypal.me/grassfedcode",
 
   keys_to_not_log_changes_in_console: ["gdb_mi_output", "gdb_console_entries"]
 };
